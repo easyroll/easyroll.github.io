@@ -1,0 +1,51 @@
+site_name: 이지롤 스마트블라인드 가이드
+site_description: 이지롤 스마트 블라인드 사용설명서 + Home Assistant 연동 가이드
+site_author: Inoshade
+# site_url: https://<계정>.github.io/easyroll-docs/   # 저장소 생성 후 실제 주소로 교체
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드
+  features:
+    - navigation.tabs        # 상단 탭: 사용설명서 / HA 연동
+    - navigation.footer      # 이전/다음 페이지 버튼
+    - navigation.top         # 맨 위로 버튼
+    - search.suggest
+    - content.code.copy
+
+nav:
+  - 홈: index.md
+  - 사용설명서:
+      - 소개: easyroll/index.md
+      - 1. 시작하기: easyroll/01_시작하기.md
+      - 2. 앱 등록하기: easyroll/02_앱_등록하기.md
+      - 3. 기본 사용법: easyroll/03_기본_사용법.md
+      - 4. 리모컨 사용하기: easyroll/04_리모컨_사용하기.md
+      - 5. 여러 대 함께 사용: easyroll/05_여러대_함께_사용.md
+      - 6. 문제해결 FAQ: easyroll/06_문제해결_FAQ.md
+  - Home Assistant 연동:
+      - 소개: ha/index.md
+      - 1. 시작하기 · 준비물: ha/01_시작하기_준비물.md
+      - 2. 기기 연결하기: ha/02_기기_연결하기.md
+      - 3. HA에서 사용하기: ha/03_HA에서_사용하기.md
+      - 4. 고급 명령어: ha/04_고급_명령어.md
+      - 5. 문제해결: ha/05_문제해결.md
+
+markdown_extensions:
+  - admonition            # 팁/주의 박스
+  - tables
+  - attr_list
+  - pymdownx.superfences  # 코드/다이어그램 블록
