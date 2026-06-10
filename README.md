@@ -22,18 +22,27 @@ INO_Manual/
 3. **✍️ 표시** = 채울 자리 (사진·앱 스크린샷·스토어 링크·고객센터·리모컨 사양·HA 캡처).
 4. 기술 출처: `../INO_Algorithm/` 문서와 일치 유지. HA 기능 변경 시 ha/ 문서도 갱신.
 
-## 🚀 배포 절차
+## 🌐 배포 정보 (라이브)
 
-1. GitHub **공개** 저장소 생성 (예: `inoshade/easyroll-docs`)
-2. 이 폴더를 push (이미 git 저장소로 초기화됨, 브랜치 main)
-3. push하면 Actions가 자동으로 `gh-pages` 브랜치에 사이트 빌드
-4. 저장소 Settings → Pages → Source = `gh-pages` 브랜치 → 주소 발급
-5. (선택) 도메인 연결: 예 `docs.inoshade.com` + 제품 QR코드
+| 항목 | 값 |
+|---|---|
+| **사이트 주소** | **https://easyroll.github.io/** |
+| GitHub 저장소 | https://github.com/easyroll/easyroll.github.io (공개) |
+| GitHub 계정 | `easyroll` (회사 계정) ※`inoshade`도 회사 보유 |
+| 배포 방식 | main에 push → Actions가 MkDocs 빌드 → `gh-pages` 브랜치 → Pages 자동 반영 (1~2분) |
+| 배포일 | 2026-06-11 (펌웨어 v2.9.8 기준 초안) |
+
+### 문서 수정 방법
+```
+① 이 폴더(INO_Manual)의 docs\ 안 md 파일 수정
+② git add -A → git commit → git push
+③ 1~2분 후 https://easyroll.github.io/ 자동 반영
+```
 
 ## 진행 상태
 
 - [x] 초안 11편 + 통합 사이트 구성 (2026-06-10, 펌웨어 v2.9.8 기준)
+- [x] GitHub 저장소 생성 + push + Pages 활성화 → **https://easyroll.github.io/** (2026-06-11)
 - [ ] ✍️ 채우기 (사진·스크린샷·링크·연락처·리모컨 버튼 사양)
 - [ ] 검수 (처음 보는 사람이 따라해 보기)
-- [ ] GitHub 저장소 생성 + push + Pages 활성화
-- [ ] 도메인 연결 + QR코드 제작
+- [ ] 도메인 연결 (예: docs.inoshade.com) + QR코드 제작
