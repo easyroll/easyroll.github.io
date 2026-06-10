@@ -1,7 +1,7 @@
 site_name: 이지롤 스마트블라인드 가이드
 site_description: 이지롤 스마트 블라인드 사용설명서 + Home Assistant 연동 가이드
 site_author: Inoshade
-# site_url: https://<계정>.github.io/easyroll-docs/   # 저장소 생성 후 실제 주소로 교체
+site_url: https://easyroll.github.io/
 
 theme:
   name: material
