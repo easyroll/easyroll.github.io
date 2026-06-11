@@ -7,15 +7,16 @@ theme:
   name: material
   language: ko
   palette:
+    # [#20260611] easyroll 앱 팔레트(네이비/연하늘)로 변경 — 색상값은 docs/stylesheets/extra.css
     - scheme: default
-      primary: teal
-      accent: teal
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: 다크 모드
     - scheme: slate
-      primary: teal
-      accent: teal
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: 라이트 모드
@@ -43,6 +44,9 @@ nav:
       - 3. HA에서 사용하기: ha/03_HA에서_사용하기.md
       - 4. 고급 명령어: ha/04_고급_명령어.md
       - 5. 문제해결: ha/05_문제해결.md
+
+extra_css:
+  - stylesheets/extra.css   # [#20260611] easyroll 앱 팔레트 (네이비 #16407c / 연하늘)
 
 markdown_extensions:
   - admonition            # 팁/주의 박스
