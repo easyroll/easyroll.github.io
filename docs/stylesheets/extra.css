@@ -231,6 +231,25 @@ body { letter-spacing: -0.01em; }
 .md-typeset .er-duo p { flex: 1 1 240px; min-width: 0; margin: 0; }
 .md-typeset .er-duo img { width: 100%; margin: 0.4em 0 !important; }
 
+/* ── 푸터: 브랜드 톤으로 (기본 검정 → 라이트=연블루 / 다크=네이비) ── */
+[data-md-color-scheme="default"] .md-footer {
+  background: #ffffff;
+  color: var(--er-ink);
+  border-top: 1px solid rgba(104, 130, 198, 0.22);
+}
+[data-md-color-scheme="default"] .md-footer__link { color: var(--er-ink); opacity: 1; }
+[data-md-color-scheme="default"] .md-footer__link:hover { color: var(--er-blue); }
+[data-md-color-scheme="default"] .md-footer__direction { color: #7c8798; }
+[data-md-color-scheme="default"] .md-footer-meta {
+  background: var(--er-cream);
+  color: #7c8798;
+}
+[data-md-color-scheme="default"] .md-footer-meta .md-copyright,
+[data-md-color-scheme="default"] .md-footer-meta .md-copyright__highlight { color: #7c8798; }
+
+[data-md-color-scheme="slate"] .md-footer { background: #16233a; }
+[data-md-color-scheme="slate"] .md-footer-meta { background: #0f1c30; }
+
 /* ── 사이드바: 하위 장(1-1·1-2·2-1·2-2·3-1) 들여쓰기 ── */
 .md-nav__link[href*="install_guide"],
 .md-nav__link[href*="02_%EC%95%B1_%EC%84%A4%EC%B9%98"],
