@@ -2,12 +2,19 @@ site_name: 이지롤 스마트블라인드 가이드
 site_description: 이지롤 스마트 블라인드 사용설명서 + Home Assistant 연동 가이드
 site_author: Inoshade
 site_url: https://easyroll.github.io/
+copyright: Made with INOSHADE
+
+extra:
+  generator: false   # 푸터 "Made with Material for MkDocs" 숨김
 
 theme:
   name: material
   language: ko
+  font: false            # 구글폰트 비활성 — Pretendard를 extra.css에서 로드
+  logo: images/logo.png
+  favicon: images/favicon.png
   palette:
-    # [#20260611] easyroll 앱 팔레트(네이비/연하늘)로 변경 — 색상값은 docs/stylesheets/extra.css
+    # [#20260721-v2] 기본=라이트 (레퍼런스 스타일: vectormaker·wisprflow — 밝은 공기감+블루) · 다크는 토글
     - scheme: default
       primary: custom
       accent: custom
@@ -24,6 +31,8 @@ theme:
     - navigation.tabs        # 상단 탭: 사용설명서 / HA 연동
     - navigation.footer      # 이전/다음 페이지 버튼
     - navigation.top         # 맨 위로 버튼
+    - navigation.instant     # 페이지 즉시 전환(SPA 느낌)
+    - navigation.instant.progress  # 상단 로딩 진행바
     - search.suggest
     - content.code.copy
 
@@ -32,14 +41,20 @@ nav:
   - 사용설명서:
       - 소개: easyroll/index.md
       - 1. 시작하기: easyroll/01_시작하기.md
+      - 1-1. 설치 가이드 (조립): easyroll/install_guide.md
+      - 1-2. 앱 설치와 회원가입: easyroll/02_앱_설치_회원가입.md
       - 2. 기기 등록하기: easyroll/02_앱_등록하기.md
+      - 2-1. 상/하단 위치 설정: easyroll/02-1_상하단_위치_설정.md
+      - 2-2. 구역·번호 변경: easyroll/02-2_구역_번호_정리.md
       - 3. 기본 사용법: easyroll/03_기본_사용법.md
+      - 3-1. 알람 설정: easyroll/07_알람.md
       - 4. 여러 대 함께 사용: easyroll/05_여러대_함께_사용.md
       - 5. 리모컨 사용하기: easyroll/04_리모컨_사용하기.md
-      - 6. 알람 설정: easyroll/07_알람.md
-      - 7. 공유기 변경: easyroll/08_공유기_변경.md
-      - 8. 기기 업데이트: easyroll/09_기기_업데이트.md
+      - 6. 공유기 변경: easyroll/08_공유기_변경.md
+      - 7. 기기 업데이트: easyroll/09_기기_업데이트.md
       - 문제해결 FAQ: easyroll/06_문제해결_FAQ.md
+  - SmartThings 연동: st/index.md
+  - Google Home 연동: google/index.md
   - Home Assistant 연동:
       - 소개: ha/index.md
       - 1. 시작하기 · 준비물: ha/01_시작하기_준비물.md
@@ -49,10 +64,19 @@ nav:
       - 5. 문제해결: ha/05_문제해결.md
 
 extra_css:
-  - stylesheets/extra.css   # [#20260611] easyroll 앱 팔레트 (네이비 #16407c / 연하늘)
+  - stylesheets/extra.css   # [#20260721] 모던 스킨 — Pretendard·라운드·카드·스크린샷 프레임
 
 markdown_extensions:
+  - toc:                  # 한글 제목도 앵커(#링크)로 동작하게
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
   - admonition            # 팁/주의 박스
   - tables
   - attr_list
+  - md_in_html            # 홈 히어로/그리드 카드용
   - pymdownx.superfences  # 코드/다이어그램 블록
+  - pymdownx.details      # 접이식 박스 (설치가이드 원본 보기 등)
+  - pymdownx.tabbed:      # 탭 (박스형/오픈형 구분)
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

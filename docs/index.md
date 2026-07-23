@@ -1,34 +1,42 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
+<div class="er-hero" markdown>
+
+![이지롤](images/logo.png){ .no-frame }
+
 # 이지롤 스마트 블라인드 가이드
 
-스마트폰으로 블라인드를 올리고 내리고, 시간 맞춰 자동으로 — **이지롤**에 오신 걸 환영합니다.
+스마트폰으로 올리고 내리고, 시간 맞춰 자동으로 — 이지롤에 오신 걸 환영합니다.
+
+[처음이신가요? 시작하기](easyroll/01_시작하기.md){ .md-button .md-button--primary }
+[문제해결 FAQ](easyroll/06_문제해결_FAQ.md){ .md-button }
+
+</div>
+
+## 플랫폼 연동
+
+<div class="er-rows" markdown>
+
+- [![](images/brand/smartthings.svg){ .er-bicon .no-frame } **SmartThings · 빅스비** <span>삼성 SmartThings 연결과 음성 제어</span>](st/index.md)
+- [![](images/brand/googlehome.svg){ .er-bicon .no-frame } **Google Home** <span>"헤이 구글, 블라인드 열어줘"</span>](google/index.md)
+- [:simple-homeassistant:{ .icon-ha } **Home Assistant** <span>스마트홈 직접 연결 — 고급 사용자용</span>](ha/index.md)
+
+</div>
 
 ---
 
-## 🔎 어떤 도움이 필요하세요?
+<div class="er-contact" markdown>
 
-| 상황 | 바로가기 |
-|---|---|
-| 📦 **방금 설치했어요 (처음이에요)** | [1. 시작하기](easyroll/01_시작하기.md) |
-| 📱 **앱에 블라인드를 등록하고 싶어요** | [2. 기기 등록하기](easyroll/02_앱_등록하기.md) |
-| 🎮 **올리고 내리는 기본 사용법** | [3. 기본 사용법](easyroll/03_기본_사용법.md) |
-| 🪟 **여러 개 높이를 가지런히 맞추고 싶어요** | [4. 여러 대 함께 사용](easyroll/05_여러대_함께_사용.md) |
-| 🕹️ **리모컨을 쓰고 싶어요** | [5. 리모컨 사용하기](easyroll/04_리모컨_사용하기.md) |
-| ⏰ **시간 맞춰 자동으로 (알람)** | [6. 알람 설정](easyroll/07_알람.md) |
-| 📶 **공유기(와이파이)를 바꿨어요** | [7. 공유기 변경](easyroll/08_공유기_변경.md) |
-| ⬆️ **기기 업데이트** | [8. 기기 업데이트](easyroll/09_기기_업데이트.md) |
-| ❓ **안 움직여요 / 연결이 안 돼요** | [문제해결 FAQ](easyroll/06_문제해결_FAQ.md) |
+**문의하기** 💬
 
----
+☎️ 고객센터 **031-358-1016** · 평일 09:00 ~ 18:00
 
-## 📖 두 가지 가이드
+🌐 홈페이지 **[easyroll.kr](https://easyroll.kr)**
 
-### 🪟 [사용설명서](easyroll/index.md)
-일반 고객용. 설치 → 등록 → 사용 → 문제해결까지 이 안에 다 있습니다.
+앱에서는 **메뉴 → 문의하기**로 연결됩니다.
 
-### 🏠 [Home Assistant 연동](ha/index.md)
-스마트홈(HA)에 직접 연결해 쓰는 고급 사용자용.
-
----
-
-> 💬 **막히면 언제든 문의하세요.** 앱 안 **메뉴 → 문의하기**(홈페이지·이메일)로 연결됩니다.
-> ☎️ **고객센터 031-358-1016** (평일 09:00~18:00) · 카카오톡 채널 **@이지롤스마트블라인드**
+</div>
