@@ -52,8 +52,6 @@ body { letter-spacing: -0.01em; }
   .md-content__inner { margin: 0 0.7rem 1.2rem; }
   /* 터치 영역: 목록 링크·버튼 넉넉하게 */
   .md-typeset .md-button { display: block; text-align: center; padding: 0.8em 1.4em; }
-  /* 홈 히어로: 세로로 쌓인 버튼 사이 간격 */
-  .er-hero .md-button { margin: 0.45rem 0; }
   .md-nav__link { padding: 0.5rem 0; }
 }
 
@@ -291,6 +289,15 @@ body { letter-spacing: -0.01em; }
 }
 .er-hero h1 { margin: 0 0 0.35rem; font-size: 1.85rem; color: inherit; }
 .er-hero p { margin: 0 0 1.3rem; opacity: 0.75; }
+/* 히어로 버튼 묶음: 세로 배치 + 확실한 간격 (margin collapse 방지) */
+.er-hero p:has(.md-button) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  opacity: 1;
+}
+.er-hero p:has(.md-button) .md-button { margin: 0; min-width: 15rem; }
 
 /* ── 홈(사이드바 둘 다 숨김 페이지): 본문 카드 전체를 좁혀 가운데 정렬 ── */
 .md-main__inner:has(.md-sidebar--primary[hidden]):has(.md-sidebar--secondary[hidden]) .md-content {
