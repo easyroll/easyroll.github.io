@@ -5,7 +5,7 @@ From **first-time setup to everyday use and troubleshooting**, this single guide
 
 ---
 
-## 🚀 New here?
+## New here?
 
 Just follow these steps in order (about 10 minutes):
 
@@ -13,7 +13,7 @@ Just follow these steps in order (about 10 minutes):
 
 ---
 
-## 📖 Full Contents
+## Full Contents
 
 <div class="er-rows" markdown>
 
@@ -35,10 +35,16 @@ Just follow these steps in order (about 10 minutes):
 
 ---
 
-## 🔧 Running into trouble?
+## Running into trouble?
 
 Start by checking the LED status in the **[Troubleshooting FAQ](06_문제해결_FAQ.md)**. Most issues are resolved in 1–2 minutes.
 
 ---
 
-☎️ **Customer Center 031-358-1016** (Weekdays 09:00–18:00) · 🌐 Website **[easyroll.kr](https://easyroll.kr)**
+<div class="er-contactbar" markdown>
+
+:material-phone-in-talk: **Customer Center** 031-358-1016 · Weekdays 09:00 – 18:00
+
+:material-web: **Website** [easyroll.kr](https://easyroll.kr) · Community → Q&A board
+
+</div>

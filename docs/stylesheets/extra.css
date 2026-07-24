@@ -417,6 +417,30 @@ body { letter-spacing: -0.01em; }
 [data-md-color-scheme="slate"] .md-typeset .er-appbox { background: #1d3560; }
 [data-md-color-scheme="slate"] .md-typeset .er-appbox span { color: #93a1b8; }
 
+/* ── 페이지 하단 문의 바 (전 페이지 공통, 라인 아이콘) ── */
+.md-typeset .er-contactbar {
+  display: flex; flex-wrap: wrap; gap: 0.6rem;
+  margin: 1.6rem 0 0.4rem;
+}
+.md-typeset .er-contactbar > p {
+  flex: 1 1 260px; margin: 0;
+  display: flex; align-items: center; gap: 0.6rem;
+  background: var(--er-sky);
+  border: 1px solid rgba(104,130,198,0.16);
+  border-radius: 14px;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  color: var(--er-ink);
+  line-height: 1.5;
+}
+.md-typeset .er-contactbar > p .twemoji { color: var(--er-blue); flex: none; }
+.md-typeset .er-contactbar > p .twemoji svg { width: 1.3rem; height: 1.3rem; }
+.md-typeset .er-contactbar strong { color: var(--er-ink); font-weight: 800; }
+.md-typeset .er-contactbar a { color: var(--er-blue); font-weight: 700; }
+[data-md-color-scheme="slate"] .md-typeset .er-contactbar > p { background: #1d3560; color: #e8ecf5; border-color: rgba(104,130,198,0.3); }
+[data-md-color-scheme="slate"] .md-typeset .er-contactbar strong { color: #e8ecf5; }
+[data-md-color-scheme="slate"] .md-typeset .er-contactbar > p .twemoji { color: #9db8ec; }
+
 /* ── 홈 하단 문의 카드 (모던 리디자인) ── */
 .md-typeset .er-contact {
   text-align: center;

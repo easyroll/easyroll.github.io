@@ -5,7 +5,7 @@
 
 ---
 
-## 🚀 처음이신가요?
+## 처음이신가요?
 
 이 순서대로만 따라 하시면 됩니다 (약 10분):
 
@@ -13,7 +13,7 @@
 
 ---
 
-## 📖 전체 목차
+## 전체 목차
 
 <div class="er-rows" markdown>
 
@@ -35,10 +35,16 @@
 
 ---
 
-## 🔧 문제가 생겼나요?
+## 문제가 생겼나요?
 
 **[문제해결 FAQ](06_문제해결_FAQ.md)** 에서 LED 상태부터 확인해 보세요. 대부분 1~2분이면 해결됩니다.
 
 ---
 
-☎️ **고객센터 031-358-1016** (평일 09:00~18:00) · 🌐 홈페이지 **[easyroll.kr](https://easyroll.kr)**
+<div class="er-contactbar" markdown>
+
+:material-phone-in-talk: **고객센터** 031-358-1016 · 평일 09:00 ~ 18:00
+
+:material-web: **홈페이지** [easyroll.kr](https://easyroll.kr) · Community → Q&A 제품문의
+
+</div>

@@ -35,4 +35,10 @@ Connect your EasyRoll blind to **Google Home** to operate it by **"Hey Google" v
 
 ---
 
-Inquiries: **Customer Center 031-358-1016** (weekdays 09:00–18:00) · Website **[easyroll.kr](https://easyroll.kr)**
+<div class="er-contactbar" markdown>
+
+:material-phone-in-talk: **Customer Center** 031-358-1016 · Weekdays 09:00 – 18:00
+
+:material-web: **Website** [easyroll.kr](https://easyroll.kr) · Community → Q&A board
+
+</div>

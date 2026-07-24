@@ -45,10 +45,13 @@
 
 ## 그래도 해결이 안 되면
 
-| 문의 방법 | 안내 |
-|---|---|
-| ☎️ 고객센터 | **031-358-1016** (평일 09:00 ~ 18:00) |
-| 🌐 홈페이지 | **[easyroll.kr](https://easyroll.kr)** — 제품 문의 게시판 |
-| 🛡 품질보증 | 전동모터 **무상 보증 2년** |
+<div class="er-contactbar" markdown>
+
+:material-phone-in-talk: **고객센터** 031-358-1016 · 평일 09:00 ~ 18:00
+
+:material-web: **홈페이지** [easyroll.kr](https://easyroll.kr) · Community → Q&A 제품문의
+
+</div>
 
 문의 시 **기기 라벨의 이름(EZS...)** 과 **LED 상태**를 알려주시면 훨씬 빠르게 도와드릴 수 있습니다.
+전동모터는 **무상 보증 2년**입니다.

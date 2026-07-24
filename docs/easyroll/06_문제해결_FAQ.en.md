@@ -45,10 +45,13 @@ Press and hold the button on the device body for **5 seconds or more**. All sett
 
 ## If That Still Doesn't Solve It
 
-| How to Contact | Details |
-|---|---|
-| ☎️ Customer Center | **031-358-1016** (weekdays 09:00 – 18:00) |
-| 🌐 Website | **[easyroll.kr](https://easyroll.kr)** — product inquiry board |
-| 🛡 Warranty | Motor unit **2-year free warranty** |
+<div class="er-contactbar" markdown>
+
+:material-phone-in-talk: **Customer Center** 031-358-1016 · Weekdays 09:00 – 18:00
+
+:material-web: **Website** [easyroll.kr](https://easyroll.kr) · Community → Q&A board
+
+</div>
 
 When you contact us, telling us the **name on the device label (EZS...)** and the **LED status** helps us assist you much faster.
+The motor unit comes with a **2-year free warranty**.

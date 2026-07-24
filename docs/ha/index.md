@@ -32,4 +32,10 @@
 ---
 
 일반 사용법은 [사용설명서](../easyroll/index.md)를 보세요.
-문의: **고객센터 031-358-1016** (평일 09:00~18:00) · 홈페이지 **[easyroll.kr](https://easyroll.kr)**
+<div class="er-contactbar" markdown>
+
+:material-phone-in-talk: **고객센터** 031-358-1016 · 평일 09:00 ~ 18:00
+
+:material-web: **홈페이지** [easyroll.kr](https://easyroll.kr) · Community → Q&A 제품문의
+
+</div>

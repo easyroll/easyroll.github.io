@@ -37,10 +37,10 @@ hide:
 <div class="er-contact__grid" markdown>
 
 - [:material-phone: **고객센터** <span>031-358-1016</span> <em>평일 09:00 ~ 18:00</em>](tel:031-358-1016)
-- [:material-web: **홈페이지** <span>easyroll.kr</span> <em>제품 정보 · 구매</em>](https://easyroll.kr)
+- [:material-web: **홈페이지** <span>easyroll.kr</span> <em>Community · Q&A 제품문의</em>](https://easyroll.kr)
 
 </div>
 
-<span class="er-contact__note">앱에서는 <b>메뉴 → 문의하기</b>로도 연결됩니다.</span>
+<span class="er-contact__note">궁금한 점은 홈페이지 <b>Community → Q&A 제품문의</b> 게시판에서 문의하실 수 있습니다. · 앱에서는 <b>메뉴 → 문의하기</b>로 연결됩니다.</span>
 
 </div>
