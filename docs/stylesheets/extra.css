@@ -417,18 +417,67 @@ body { letter-spacing: -0.01em; }
 [data-md-color-scheme="slate"] .md-typeset .er-appbox { background: #1d3560; }
 [data-md-color-scheme="slate"] .md-typeset .er-appbox span { color: #93a1b8; }
 
-/* ── 홈 하단 문의 카드 ── */
+/* ── 홈 하단 문의 카드 (모던 리디자인) ── */
 .md-typeset .er-contact {
   text-align: center;
   background: var(--er-sky);
-  border-radius: 20px;
-  padding: 1.6rem 1.2rem;
+  border-radius: 22px;
+  padding: 2.1rem 1.4rem 1.8rem;
   margin-top: 1.6rem;
 }
-.md-typeset .er-contact p { margin: 0.35em 0; }
-.md-typeset .er-contact p:first-child { font-size: 1.06rem; margin-bottom: 0.7em; }
-.md-typeset .er-contact p:last-child { font-size: 0.8rem; opacity: 0.65; margin-top: 0.8em; }
-[data-md-color-scheme="slate"] .md-typeset .er-contact { background: #1d3560; }
+.md-typeset .er-contact__eyebrow {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  font-weight: 700;
+  color: var(--er-peri);
+}
+.md-typeset .er-contact__title {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--er-ink);
+  margin: 0.25rem 0 1.4rem;
+  letter-spacing: -0.02em;
+}
+/* 연락 항목 2개: 화이트 타일 그리드 */
+.md-typeset .er-contact__grid ul {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; gap: 0.9rem; justify-content: center; flex-wrap: wrap;
+}
+.md-typeset .er-contact__grid li { margin: 0; flex: 1 1 220px; max-width: 300px; }
+.md-typeset .er-contact__grid li a {
+  display: flex; flex-direction: column; align-items: center; gap: 0.15rem;
+  background: #fff;
+  border: 1px solid rgba(104,130,198,0.20);
+  border-radius: 16px;
+  padding: 1.1rem 1rem;
+  color: var(--er-ink);
+  transition: transform .14s, box-shadow .14s, border-color .14s;
+}
+.md-typeset .er-contact__grid li a:hover {
+  transform: translateY(-3px);
+  border-color: var(--er-peri);
+  box-shadow: -.1rem -.1rem .8rem var(--er-glow), .1rem .1rem .8rem var(--er-glow);
+}
+.md-typeset .er-contact__grid li a .twemoji {
+  color: var(--er-blue);
+  margin-bottom: 0.35rem;
+}
+.md-typeset .er-contact__grid li a .twemoji svg { width: 1.5rem; height: 1.5rem; }
+.md-typeset .er-contact__grid li a strong { font-size: 0.86rem; color: #7c8798; font-weight: 700; letter-spacing: 0.02em; }
+.md-typeset .er-contact__grid li a span { font-size: 1.16rem; font-weight: 800; color: var(--er-ink); }
+.md-typeset .er-contact__grid li a em { font-style: normal; font-size: 0.8rem; color: #8a95a6; margin-top: 0.15rem; }
+.md-typeset .er-contact__note {
+  display: block; margin-top: 1.3rem;
+  font-size: 0.82rem; color: #7c8798;
+}
+[data-md-color-scheme="slate"] .md-typeset .er-contact { background: #16233a; }
+[data-md-color-scheme="slate"] .md-typeset .er-contact__title { color: #e8ecf5; }
+[data-md-color-scheme="slate"] .md-typeset .er-contact__grid li a { background: #1d3560; border-color: rgba(104,130,198,0.3); }
+[data-md-color-scheme="slate"] .md-typeset .er-contact__grid li a span { color: #e8ecf5; }
+[data-md-color-scheme="slate"] .md-typeset .er-contact__grid li a .twemoji { color: #9db8ec; }
+[data-md-color-scheme="slate"] .md-typeset .er-contact__note { color: #93a1b8; }
 
 /* ── 그리드 카드: 화이트 + 호버 글로우 ── */
 .md-typeset .grid.cards > ul > li {

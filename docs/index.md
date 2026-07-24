@@ -31,12 +31,16 @@ hide:
 
 <div class="er-contact" markdown>
 
-**문의하기** 💬
+<span class="er-contact__eyebrow">CONTACT</span>
+<span class="er-contact__title">문의하기</span>
 
-☎️ 고객센터 **031-358-1016** · 평일 09:00 ~ 18:00
+<div class="er-contact__grid" markdown>
 
-🌐 홈페이지 **[easyroll.kr](https://easyroll.kr)**
+- [:material-phone: **고객센터** <span>031-358-1016</span> <em>평일 09:00 ~ 18:00</em>](tel:031-358-1016)
+- [:material-web: **홈페이지** <span>easyroll.kr</span> <em>제품 정보 · 구매</em>](https://easyroll.kr)
 
-앱에서는 **메뉴 → 문의하기**로 연결됩니다.
+</div>
+
+<span class="er-contact__note">앱에서는 <b>메뉴 → 문의하기</b>로도 연결됩니다.</span>
 
 </div>
