@@ -7,6 +7,48 @@ copyright: Made with INOSHADE
 extra:
   generator: false   # 푸터 "Made with Material for MkDocs" 숨김
 
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: ko
+          default: true
+          name: 한국어
+          build: true
+        - locale: en
+          name: English
+          build: true
+          site_name: EasyRoll Smart Blind Guide
+          nav_translations:
+            홈: Home
+            사용설명서: User Guide
+            소개: Overview
+            "1. 시작하기": "1. Getting Started"
+            "1-1. 설치 가이드 (조립)": "1-1. Installation Guide"
+            "1-2. 앱 설치와 회원가입": "1-2. App Install & Sign Up"
+            "2. 기기 등록하기": "2. Register Device"
+            "2-1. 상/하단 위치 설정": "2-1. Set Upper/Lower Limits"
+            "2-2. 구역·번호 변경": "2-2. Zone & Number Editing"
+            "3. 기본 사용법": "3. Basic Use"
+            "3-1. 알람 설정": "3-1. Alarms"
+            "4. 여러 대 함께 사용": "4. Using Multiple Blinds"
+            "5. 리모컨 사용하기": "5. Remote Control"
+            "6. 공유기 변경": "6. Change Wi-Fi"
+            "7. 기기 업데이트": "7. Device Update"
+            "문제해결 FAQ": "Troubleshooting FAQ"
+            SmartThings 연동: SmartThings
+            Google Home 연동: Google Home
+            Home Assistant 연동: Home Assistant
+            "1. 시작하기 · 준비물": "1. Getting Started"
+            "2. 기기 연결하기": "2. Connect Device"
+            "3. HA에서 사용하기": "3. Using in HA"
+            "4. 고급 명령어": "4. Advanced Commands"
+            "5. 문제해결": "5. Troubleshooting"
+
 theme:
   name: material
   language: ko
@@ -31,8 +73,6 @@ theme:
     - navigation.tabs        # 상단 탭: 사용설명서 / HA 연동
     - navigation.footer      # 이전/다음 페이지 버튼
     - navigation.top         # 맨 위로 버튼
-    - navigation.instant     # 페이지 즉시 전환(SPA 느낌)
-    - navigation.instant.progress  # 상단 로딩 진행바
     - search.suggest
     - content.code.copy
 

@@ -30,7 +30,74 @@
 }
 
 body { letter-spacing: -0.01em; }
+
+/* ═══ 모바일 가독성 최적화 (앱 링크 제공 전제) ═══ */
+/* 본문 타이포: 크게·넉넉한 줄간격·한글 어절 유지 */
+.md-typeset {
+  font-size: 0.82rem;         /* 기본 0.8 → 살짝 업(데스크톱) */
+  line-height: 1.75;
+  word-break: keep-all;        /* 한글 어절 단위 줄바꿈 */
+  overflow-wrap: break-word;
+}
+.md-typeset p, .md-typeset li { letter-spacing: -0.003em; }
+.md-typeset li { margin-bottom: 0.35em; }
+.md-typeset h2 { margin-top: 2.2em; }
+
+/* 모바일에서 본문 더 키움 + 좌우 여백 최적화 */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset { font-size: 0.94rem; line-height: 1.8; }
+  .md-typeset h1 { font-size: 1.5rem; }
+  .md-typeset h2 { font-size: 1.22rem; margin-top: 1.9em; }
+  .md-typeset h3 { font-size: 1.05rem; }
+  .md-content__inner { margin: 0 0.7rem 1.2rem; }
+  /* 터치 영역: 목록 링크·버튼 넉넉하게 */
+  .md-typeset .md-button { display: block; text-align: center; padding: 0.8em 1.4em; }
+  .md-nav__link { padding: 0.5rem 0; }
+}
+
 .md-typeset h1, .md-typeset h2, .md-typeset h3 { font-weight: 800; letter-spacing: -0.025em; color: var(--er-ink); }
+
+/* ═══ #3 섹션 위계: h2에 왼쪽 강조 바 + 여백 (이모지 없이도 "구획"이 명확) ═══ */
+.md-typeset h2 {
+  padding-left: 0.7rem;
+  border-left: 5px solid var(--er-blue);
+  line-height: 1.35;
+}
+.md-typeset h3 {
+  padding-left: 0.55rem;
+  border-left: 3px solid var(--er-peri);
+}
+
+/* ═══ #4·#5 단계 시각화: 순서 목록(<ol>)에 번호 원형 배지 ═══ */
+.md-typeset ol { counter-reset: er-step; list-style: none; margin-left: 0; padding-left: 0; }
+.md-typeset ol > li {
+  counter-increment: er-step;
+  position: relative;
+  padding-left: 1.9rem;
+  margin-bottom: 0.7em;
+}
+.md-typeset ol > li::before {
+  counter-reset: none;
+  content: counter(er-step);
+  position: absolute;
+  left: 0; top: 0.18em;
+  width: 1.3rem; height: 1.3rem;
+  border-radius: 50%;
+  background: var(--er-sky);
+  color: var(--er-blue);
+  font-weight: 800;
+  font-size: 0.78rem;
+  display: flex; align-items: center; justify-content: center;
+}
+/* 중첩 순서목록은 배지 톤 다운(하위 단계) */
+.md-typeset ol ol > li::before {
+  background: transparent;
+  color: var(--er-peri);
+  width: 1.2rem; height: 1.2rem; font-size: 0.72rem;
+}
+.md-typeset ol ol > li { padding-left: 1.6rem; }
+[data-md-color-scheme="slate"] .md-typeset ol > li::before { background: #1d3560; color: #9db8ec; }
+
 [data-md-color-scheme="slate"] .md-typeset h1,
 [data-md-color-scheme="slate"] .md-typeset h2,
 [data-md-color-scheme="slate"] .md-typeset h3 { color: #e8ecf5; }
@@ -99,6 +166,48 @@ body { letter-spacing: -0.01em; }
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
   background: #1d3560;
   color: #e8ecf5;
+}
+
+/* ── 모바일: 표를 세로 카드로 전환 (좌우 스크롤 제거) ── */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset table:not([class]) { border: none; box-shadow: none; display: block; }
+  .md-typeset table:not([class]) thead { display: none; }  /* 머리글 숨김 */
+  .md-typeset table:not([class]) tbody { display: block; }
+  .md-typeset table:not([class]) tr {
+    display: block;
+    background: #fff;
+    border: 1px solid rgba(104,130,198,0.22);
+    border-radius: 14px;
+    padding: 0.5em 0.9em;
+    margin-bottom: 0.7em;
+    box-shadow: 0 1px 8px rgba(26,44,94,0.05);
+  }
+  .md-typeset table:not([class]) td {
+    display: block;
+    border: none;
+    padding: 0.35em 0;
+    text-align: left !important;
+  }
+  /* 첫 칸(항목명) = 카드 제목처럼 강조 */
+  .md-typeset table:not([class]) td:first-child {
+    font-weight: 800;
+    color: var(--er-blue);
+    font-size: 1.02em;
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid rgba(104,130,198,0.15);
+    margin-bottom: 0.3em;
+  }
+  [data-md-color-scheme="slate"] .md-typeset table:not([class]) tr { background: #16233a; border-color: rgba(104,130,198,0.3); }
+  [data-md-color-scheme="slate"] .md-typeset table:not([class]) td:first-child { color: #9db8ec; }
+}
+
+/* ── 모바일: 본문 이미지 꽉 차게 (width 지정 무시하고 컨테이너 폭까지) ── */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset img:not(.no-frame):not(.er-bicon):not(.twemoji img) {
+    width: 100% !important;
+    max-width: 420px;
+  }
+  .md-typeset .er-appbox img { width: 76px !important; }
 }
 
 /* ── 본문 이미지(스크린샷) 자동 프레이밍: 라운드 + 블루 글로우 ── */
@@ -231,24 +340,41 @@ body { letter-spacing: -0.01em; }
 .md-typeset .er-duo p { flex: 1 1 240px; min-width: 0; margin: 0; }
 .md-typeset .er-duo img { width: 100%; margin: 0.4em 0 !important; }
 
-/* ── 푸터: 브랜드 톤으로 (기본 검정 → 라이트=연블루 / 다크=네이비) ── */
+/* ── 본문과 푸터 사이 여백 ── */
+.md-main { padding-bottom: 2.4rem; }
+
+/* ── 푸터: 브랜드 톤으로 (기본 검정 → 라이트=연그레이블루 / 다크=네이비) ── */
 [data-md-color-scheme="default"] .md-footer {
-  background: #ffffff;
+  background: #eef1f6;
   color: var(--er-ink);
-  border-top: 1px solid rgba(104, 130, 198, 0.22);
+  border-top: 1px solid rgba(104, 130, 198, 0.20);
 }
 [data-md-color-scheme="default"] .md-footer__link { color: var(--er-ink); opacity: 1; }
 [data-md-color-scheme="default"] .md-footer__link:hover { color: var(--er-blue); }
 [data-md-color-scheme="default"] .md-footer__direction { color: #7c8798; }
 [data-md-color-scheme="default"] .md-footer-meta {
-  background: var(--er-cream);
-  color: #7c8798;
+  background: #e4e8ef;
+  color: #6b7788;
 }
 [data-md-color-scheme="default"] .md-footer-meta .md-copyright,
 [data-md-color-scheme="default"] .md-footer-meta .md-copyright__highlight { color: #7c8798; }
 
 [data-md-color-scheme="slate"] .md-footer { background: #16233a; }
 [data-md-color-scheme="slate"] .md-footer-meta { background: #0f1c30; }
+
+/* ═══ #5 탐색성: 현재 보는 장을 사이드바에서 강조 (진행 위치 감각) ═══ */
+.md-nav__item .md-nav__link--active {
+  font-weight: 800;
+  color: var(--er-blue);
+  background: var(--er-sky);
+  border-radius: 8px;
+  padding-left: 0.5rem !important;
+}
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link--active {
+  color: #9db8ec; background: #1d3560;
+}
+/* 상단 진행바(instant.progress)를 브랜드 블루로 */
+.md-progress__value { background-color: var(--er-blue); }
 
 /* ── 사이드바: 하위 장(1-1·1-2·2-1·2-2·3-1) 들여쓰기 ── */
 .md-nav__link[href*="install_guide"],
