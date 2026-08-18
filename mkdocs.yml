@@ -36,6 +36,7 @@ plugins:
             "3. 기본 사용법": "3. Basic Use"
             "3-1. 알람 설정": "3-1. Alarms"
             "4. 여러 대 함께 사용": "4. Using Multiple Blinds"
+            구성원 추가: Add Members
             "5. 리모컨 사용하기": "5. Remote Control"
             "6. 공유기 변경": "6. Change Wi-Fi"
             "7. 기기 업데이트": "7. Device Update"
@@ -89,6 +90,7 @@ nav:
       - 3. 기본 사용법: easyroll/03_기본_사용법.md
       - 3-1. 알람 설정: easyroll/07_알람.md
       - 4. 여러 대 함께 사용: easyroll/05_여러대_함께_사용.md
+      - 구성원 추가: easyroll/10_구성원_추가.md
       - 5. 리모컨 사용하기: easyroll/04_리모컨_사용하기.md
       - 6. 공유기 변경: easyroll/08_공유기_변경.md
       - 7. 기기 업데이트: easyroll/09_기기_업데이트.md
