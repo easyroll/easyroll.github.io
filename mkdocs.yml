@@ -48,6 +48,7 @@ plugins:
             "2. 기기 연결하기": "2. Connect Device"
             "3. HA에서 사용하기": "3. Using in HA"
             "4. 고급 명령어": "4. Advanced Commands"
+            "기기 이전·삭제하기": "Move / Remove Device"
             "5. 문제해결": "5. Troubleshooting"
 
 theme:
@@ -103,6 +104,7 @@ nav:
       - 2. 기기 연결하기: ha/02_기기_연결하기.md
       - 3. HA에서 사용하기: ha/03_HA에서_사용하기.md
       - 4. 고급 명령어: ha/04_고급_명령어.md
+      - 기기 이전·삭제하기: ha/06_기기_이전하기.md
       - 5. 문제해결: ha/05_문제해결.md
 
 extra_css:

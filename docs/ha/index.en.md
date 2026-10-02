@@ -12,6 +12,7 @@ Connecting your EasyRoll Smart Blind to **Home Assistant** lets you control it d
 | [2. Connecting the Device](02_기기_연결하기.md) | Connect with just a browser (no app needed) |
 | [3. Using It in HA](03_HA에서_사용하기.md) | Cards · position slider · automation YAML examples |
 | [4. Advanced Commands](04_고급_명령어.md) | Direct MQTT control · switching servers |
+| [Move / Remove Device](06_기기_이전하기.md) | Move to another home/HA (clear HA connection) |
 | [5. Troubleshooting](05_문제해결.md) | Connection failures · behavior when the broker is down |
 
 ---
