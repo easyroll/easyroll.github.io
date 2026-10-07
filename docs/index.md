@@ -23,7 +23,7 @@ hide:
 
 - [![](images/brand/smartthings.svg){ .er-bicon .no-frame } **SmartThings · 빅스비** <span>삼성 SmartThings 연결과 음성 제어</span>](st/index.md)
 - [![](images/brand/googlehome.svg){ .er-bicon .no-frame } **Google Home** <span>"헤이 구글, 블라인드 열어줘"</span>](google/index.md)
-- [:simple-homeassistant:{ .icon-ha } **Home Assistant** <span>스마트홈 직접 연결 — 고급 사용자용</span>](ha/index.md)
+- [:simple-homeassistant:{ .icon-ha } **Home Assistant** <span>앱과 함께 쓰는 로컬 제어·자동화 (하이브리드)</span>](ha/index.md)
 
 </div>
 

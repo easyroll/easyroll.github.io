@@ -23,7 +23,7 @@ Raise and lower from your smartphone, or let it run automatically on schedule �
 
 - [![](images/brand/smartthings.svg){ .er-bicon .no-frame } **SmartThings · Bixby** <span>Samsung SmartThings connection and voice control</span>](st/index.md)
 - [![](images/brand/googlehome.svg){ .er-bicon .no-frame } **Google Home** <span>"Hey Google, open the blind"</span>](google/index.md)
-- [:simple-homeassistant:{ .icon-ha } **Home Assistant** <span>Direct smart home connection — for advanced users</span>](ha/index.md)
+- [:simple-homeassistant:{ .icon-ha } **Home Assistant** <span>Local control and automations alongside the app (Hybrid)</span>](ha/index.md)
 
 </div>
 
