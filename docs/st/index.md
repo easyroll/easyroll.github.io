@@ -2,8 +2,8 @@
 
 !!! success "Works With SmartThings 공식 인증 제품"
 
-    이지롤 스마트블라인드(**EasyRoll Smartblind**, 모델 EZS15)는 삼성 SmartThings의 **WWST(Works With SmartThings) 인증**을 받은 **정식 파트너 기기**입니다. (2026년 9월 인증)
-    삼성이 직접 호환성과 동작을 검증한 제품이라, SmartThings 앱에서 **별도 허브 없이 삼성 계정만으로** 바로 연결되고 **빅스비·루틴(자동화)** 까지 정식으로 지원됩니다.
+    이지롤 스마트블라인드(**EasyRoll Smartblind**)는 삼성 SmartThings의 **WWST(Works With SmartThings) 인증**을 받은 **정식 파트너 기기**입니다. (2026년 9월 인증)
+    SmartThings 앱에서 **별도 허브 없이 삼성 계정만으로** 바로 연결되고 **빅스비·루틴(자동화)** 까지 정식으로 지원됩니다.
 
 이지롤 스마트블라인드를 **삼성 SmartThings**에 연결하면, 갤럭시폰·삼성 가전과 **한 화면에서** 제어하고 **빅스비 음성**으로도 작동할 수 있습니다.
 
