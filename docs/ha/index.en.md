@@ -1,7 +1,7 @@
 # EasyRoll × Home Assistant Integration Guide
 
 Connecting your EasyRoll Smart Blind to **Home Assistant** lets you control it directly at home without the cloud, and use it in HA automations (sunrise/sunset, temperature triggers, etc.).
-We recommend the **Hybrid** setup — keep the EasyRoll app and connect HA **in addition**: even without an internet connection you keep control via HA, and even if HA is off you keep control via the app as long as the internet is connected.
+We recommend the **Hybrid** setup — keep the EasyRoll app and connect HA **in addition**: even without an internet connection HA can still control it locally, and even if HA is off you keep control via the app as long as the internet is connected.
 
 ---
 
@@ -30,7 +30,7 @@ We recommend the **Hybrid** setup — keep the EasyRoll app and connect HA **in 
 - **Local connection** — works at home even when the internet is down
 - **Automatic registration** (MQTT Discovery) — no manual YAML required
 - **Automatic online/offline status**
-- **App + HA at the same time (Hybrid)** — **control from both the EasyRoll app and HA simultaneously.** Even without an internet connection you keep control via HA, and even if HA is off you keep control via the app as long as the internet is connected (firmware V3.2.0+)
+- **App + HA at the same time (Hybrid)** — **control from both the EasyRoll app and HA simultaneously.** Even without an internet connection HA can still control it locally, and even if HA is off you keep control via the app as long as the internet is connected (firmware V3.2.0+)
 
 ---
 
