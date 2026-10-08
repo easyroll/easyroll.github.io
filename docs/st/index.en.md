@@ -2,7 +2,7 @@
 
 !!! success "Works With SmartThings certified"
 
-    The EasyRoll Smart Blind (**EasyRoll Smartblind**) is an **officially certified partner device** that has passed Samsung's **WWST (Works With SmartThings)** certification. (Certified September 2026)
+    The EasyRoll Smart Blind (**EasyRoll Smartblind**) is an **officially certified partner device** that has passed Samsung's **WWST (Works With SmartThings)** certification.
     It connects in the SmartThings app **with just your Samsung account — no separate hub** — and **Bixby and Routines (automations)** are fully supported.
 
 Connect your EasyRoll Smart Blind to **Samsung SmartThings** to control it alongside your Galaxy phone and Samsung appliances **on one screen**, and operate it with **Bixby voice** as well.
