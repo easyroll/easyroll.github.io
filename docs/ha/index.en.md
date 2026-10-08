@@ -9,7 +9,7 @@ We recommend the **Hybrid** setup — keep the EasyRoll app and connect HA **in 
 
 | Step | Description |
 |---|---|
-| [1. Getting Started · Requirements](01_시작하기_준비물.md) | Integration method · Mosquitto broker · checklist |
+| [1. Getting Started · Requirements](01_시작하기_준비물.md) | Integration method · Mosquitto broker |
 | [2. Connecting the Device](02_기기_연결하기.md) | **① From the app (Hybrid) ★Recommended** · ② Device setup page by typing the IP |
 | [3. Using It in HA](03_HA에서_사용하기.md) | Cards · position slider · automation YAML examples |
 | [4. Advanced Commands](04_고급_명령어.md) | Direct MQTT control · switching servers |
