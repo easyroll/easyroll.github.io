@@ -30,7 +30,7 @@ We recommend the **Hybrid** setup — keep the EasyRoll app and connect HA **in 
 - **Local connection** — works at home even when the internet is down
 - **Automatic registration** (MQTT Discovery) — no manual YAML required
 - **Automatic online/offline status**
-- **App + HA at the same time (Hybrid)** — local HA control if the server is down, and the app still works if HA is off (firmware V3.2.0+)
+- **App + HA at the same time (Hybrid)** — **control from both the EasyRoll app and HA simultaneously.** Local HA control if the server is down, and the app still works if HA is off (firmware V3.2.0+)
 
 ---
 
