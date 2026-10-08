@@ -21,7 +21,7 @@ Raise and lower from your smartphone, or let it run automatically on schedule �
 
 <div class="er-rows" markdown>
 
-- [![](images/brand/smartthings.svg){ .er-bicon .no-frame } **SmartThings · Bixby** <span>Samsung SmartThings connection and voice control</span>](st/index.md)
+- [![](images/brand/smartthings.svg){ .er-bicon .no-frame } **SmartThings · Bixby** <span>WWST certified — Samsung SmartThings connection and voice control</span>](st/index.md)
 - [![](images/brand/googlehome.svg){ .er-bicon .no-frame } **Google Home** <span>"Hey Google, open the blind"</span>](google/index.md)
 - [:simple-homeassistant:{ .icon-ha } **Home Assistant** <span>Local control and automations alongside the app (Hybrid)</span>](ha/index.md)
 
