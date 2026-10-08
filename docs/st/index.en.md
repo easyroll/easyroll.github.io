@@ -13,13 +13,15 @@ Connect your EasyRoll Smart Blind to **Samsung SmartThings** to control it along
 
 | Feature | In SmartThings |
 |---|---|
-| **Open · Close · Stop** | Device card buttons / Bixby / Routines |
+| **Open · Close · Stop** | **Open · Pause · Close** buttons on the device card / Bixby / Routines |
 | **Position %** | Set any height with the slider (**100% = fully open, 0% = fully closed** — SmartThings convention) |
-| **Preset positions 1 · 2 · 3** | Move to a preset height in one tap (defaults 25% / 50% / 75%, changeable in the SmartThings app) |
+| **Preset positions m1 · m2 · m3** | Tap **◎** on the card to move to a preset height in one go; change the height with **⚙** (defaults 25% / 50% / 75%) |
 | **Live status** | Opening / Closing / Open / Closed / Partially open — the card **updates automatically** as the blind moves |
 | **Online / Offline** | If the blind loses power or internet, SmartThings shows it as "offline" |
 
-> 💡 The SmartThings presets 1 · 2 · 3 are **separate from the M1–M3 memory positions** in the EasyRoll app. Set each up as you like.
+![SmartThings device card — Open/Pause/Close, position %, presets m1·m2·m3](../images/st/st_05_device_card.jpg){ width="300" }
+
+> 💡 The SmartThings presets m1 · m2 · m3 are **separate from the M1–M3 memory positions** in the EasyRoll app. Set each up as you like.
 
 ---
 
@@ -31,10 +33,23 @@ Connect your EasyRoll Smart Blind to **Samsung SmartThings** to control it along
 
 ## Connecting (One-Time Setup)
 
-1. **SmartThings app** → **[+ Add Device]**
-2. **[Partner devices (linked services)]** → search for **"EasyRoll"** → select **EasyRoll SmartBlind**
-3. **Log in with your EasyRoll account** → allow the connection
-4. When your registered blinds **appear in SmartThings automatically, you're done!**
+1. **SmartThings app** → **[+ Add Device]** → **[Add]** under **Partner devices**
+
+    ![Add device — [Add] under Partner devices](../images/st/st_01_add_device.jpg){ width="300" }
+
+2. Select **EasyRoll SmartBlind** from the brand list (type "EasyRoll" in the 🔍 search box to jump straight to it)
+
+    ![Brand list — select EasyRoll SmartBlind](../images/st/st_02_brand_list.jpg){ width="300" }
+
+    > ⚠️ A similarly named **EasyRoll** (the older integration) also appears in the list. For a new connection, be sure to pick **EasyRoll SmartBlind** (the certified version).
+
+3. When the EasyRoll login page opens, **sign in with your EasyRoll app account (email and password)** → allow the connection
+
+    ![EasyRoll account login — completing the device link](../images/st/st_03_login.jpg){ width="300" }
+
+4. When your registered blinds **appear on the SmartThings home screen automatically, you're done!**
+
+    ![SmartThings home — the added blinds](../images/st/st_04_home_devices.jpg){ width="300" }
 
 > 💡 **All blinds registered in the EasyRoll app are added to SmartThings at once.** Blinds you register later are added to SmartThings automatically as well.
 > 💡 If you connected to SmartThings earlier, you can **keep using that connection as is.**
@@ -43,7 +58,7 @@ Connect your EasyRoll Smart Blind to **Samsung SmartThings** to control it along
 
 | Method | Example |
 |---|---|
-| **SmartThings card** | Open/close/stop, position %, presets 1 · 2 · 3 |
+| **SmartThings card** | Open/pause/close, position %, presets m1 · m2 · m3 |
 | **Bixby voice** | "Hi Bixby, open the living room blind" / "Open the blind halfway" / "Close the blind" |
 | **Routines (automation)** | Close the blinds in sleep mode · open them with your morning alarm · close all when leaving home · follow sunrise/sunset |
 | **Together with Samsung appliances** | Close the blind when the TV turns on, block sunlight when the air conditioner starts — all in one routine |
@@ -52,7 +67,7 @@ Connect your EasyRoll Smart Blind to **Samsung SmartThings** to control it along
 
 | Symptom | Solution |
 |---|---|
-| EasyRoll doesn't appear in search | Update the SmartThings app to the latest version and try again |
+| EasyRoll SmartBlind isn't in the list | The list is alphabetical — scroll to **E** or type "EasyRoll" in the 🔍 search box → if it's still missing, update the SmartThings app to the latest version and try again |
 | Connected but the device doesn't show | First check in the EasyRoll app that the blind is properly registered and online |
 | Card controls don't respond | Check that the blind is online ([FAQ](../easyroll/06_문제해결_FAQ.md)) → disconnect the SmartThings link and reconnect |
 | Position % looks reversed | SmartThings uses **100% = fully open**. This is not a fault |
