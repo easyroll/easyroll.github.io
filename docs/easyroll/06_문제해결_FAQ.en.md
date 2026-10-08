@@ -37,9 +37,16 @@ This is normal. When you connect the power, the motor performs a check by **rota
 
 ### Q. I want to delete a device from the app
 Tap the **⚙ next to the zone name → [Delete Device]** → select the blind to remove → [Delete Selected]. (To use the device again, re-register it via [2. Registering Your Device](02_앱_등록하기.md).)
+If the device was connected to Home Assistant, deleting it in the app **also cleans up its Home Assistant registration automatically**. ([Move / Remove Device](../ha/06_기기_이전하기.md))
 
 ### Q. I want to start over from scratch (factory reset)
 Press and hold the button on the device body for **5 seconds or more**. All settings (WiFi, registration, remote) are erased and it returns to a new-product state → start again from [2. Registering Your Device](02_앱_등록하기.md).
+
+### Q. Where can I see the device IP or firmware version?
+Tap the **⚙ next to the zone name → [Zone Device Settings] → [Device Info]** to see the device IP, router, Wi-Fi signal, firmware version, remote and Home Assistant status. ([2-2. Change Zone & Number](02-2_구역_번호_정리.md#checking-device-info))
+
+### Q. Can I use it with Home Assistant?
+Yes. You can keep using the EasyRoll app and connect to Home Assistant **at the same time (Hybrid)**. Tap the **⚙ next to the zone name → [Zone Device Settings] → [Home Assistant 연결]** — see the [Home Assistant Integration Guide](../ha/index.md) for details. (Firmware V3.2.0 or later)
 
 ---
 

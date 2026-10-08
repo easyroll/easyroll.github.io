@@ -29,6 +29,8 @@ Just follow these steps in order (about 10 minutes):
 - [**5. Using the Remote** <span>Registration (pairing) and channel control</span>](04_리모컨_사용하기.md)
 - [**6. Change Wi-Fi Router** <span>Reconnect to a new Wi-Fi</span>](08_공유기_변경.md)
 - [**7. Device Update** <span>Install new features and stability fixes</span>](09_기기_업데이트.md)
+- [**Add Members** <span>Invite family or colleagues to share</span>](10_구성원_추가.md)
+- [**Home Assistant** <span>Local control and automations alongside the app (Hybrid)</span>](../ha/index.md)
 - [**Troubleshooting FAQ** <span>When it won't move · Frequently asked questions</span>](06_문제해결_FAQ.md)
 
 </div>
