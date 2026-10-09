@@ -22,7 +22,7 @@ We recommend the **Hybrid** setup — keep the EasyRoll app and connect HA **in 
 
 1. Install the **Mosquitto broker** add-on in HA → [check the requirements](01_시작하기_준비물.md)
 2. **Register the device with the EasyRoll app** (skip if already in use) → [Register Device](../easyroll/02_앱_등록하기.md)
-3. In the app, tap ⚙ next to the zone name → **[구역 기기 설정] → [Home Assistant 연결]** → select devices + enter the broker info → **[연결하기]** → [details](02_기기_연결하기.md)
+3. In the app, tap ⚙ next to the zone name → **[Zone device settings] → [Home Assistant]** → select devices + enter the broker info → **[Connect]** → [details](02_기기_연결하기.md)
 4. It registers automatically in HA — use **both the app and HA** right away!
 
 ## Highlights
@@ -30,7 +30,7 @@ We recommend the **Hybrid** setup — keep the EasyRoll app and connect HA **in 
 - **Local connection** — works at home even when the internet is down
 - **Automatic registration** (MQTT Discovery) — no manual YAML required
 - **Automatic online/offline status**
-- **App + HA at the same time (Hybrid)** — **control from both the EasyRoll app and HA simultaneously.** Even if the internet goes down, HA can still control it locally, and even if HA is off you keep control via the app as long as the internet is connected (firmware V3.2.0+)
+- **App + HA at the same time (Hybrid)** — **control from both the EasyRoll app and HA simultaneously.** Even if the internet goes down, HA can still control it locally, and even if HA is off you keep control via the app as long as the internet is connected. (Firmware V3.2.0 or later)
 
 ---
 

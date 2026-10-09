@@ -9,7 +9,7 @@ From **first-time setup to everyday use and troubleshooting**, this single guide
 
 Just follow these steps in order (about 10 minutes):
 
-**[1. Getting Started](01_시작하기.md)** → **[2. Register Device](02_앱_등록하기.md)** → **[3. Basic Usage](03_기본_사용법.md)**
+**[1. Getting Started](01_시작하기.md)** → **[2. Register Device](02_앱_등록하기.md)** → **[2-1. Upper/Lower Limit Setup](02-1_상하단_위치_설정.md)** → **[3. Basic Usage](03_기본_사용법.md)**
 
 ---
 
@@ -18,18 +18,18 @@ Just follow these steps in order (about 10 minutes):
 <div class="er-rows" markdown>
 
 - [**1. Getting Started** <span>Check contents · Install · Prepare the app</span>](01_시작하기.md)
-- [**1-1. DIY Motor Assembly** <span>9-step photo guide + power connection</span>](install_guide.md)
-- [**1-2. App Install & Sign-up** <span>Install app · Easy login · Select region</span>](02_앱_설치_회원가입.md)
+- [**1-1. DIY Motor Unit Assembly** <span>9-step photo guide + power connection</span>](install_guide.md)
+- [**1-2. Installing the App & Signing Up** <span>Install app · Easy login · Select region</span>](02_앱_설치_회원가입.md)
 - [**2. Register Device** <span>Scan a QR code to add several at once</span>](02_앱_등록하기.md)
 - [**2-1. Upper/Lower Limit Setup** <span>A required setup you must do after registering</span>](02-1_상하단_위치_설정.md)
 - [**2-2. Change Zone & Number** <span>Rename blind numbers · Move to another zone</span>](02-2_구역_번호_정리.md)
 - [**3. Basic Usage** <span>Raise/lower · Save frequent positions · Settings</span>](03_기본_사용법.md)
-- [**3-1. Alarm Settings** <span>Scheduled times · Automatic sunrise/sunset actions</span>](07_알람.md)
-- [**4. Using Multiple Blinds** <span>Zone control and level align</span>](05_여러대_함께_사용.md)
-- [**5. Using the Remote** <span>Registration (pairing) and channel control</span>](04_리모컨_사용하기.md)
-- [**6. Change Wi-Fi Router** <span>Reconnect to a new Wi-Fi</span>](08_공유기_변경.md)
-- [**7. Device Update** <span>Install new features and stability fixes</span>](09_기기_업데이트.md)
+- [**3-1. Alarm Setup** <span>Scheduled times · Automatic sunrise/sunset actions</span>](07_알람.md)
+- [**4. Using Multiple Blinds Together** <span>Zone control and Auto-Level</span>](05_여러대_함께_사용.md)
 - [**Add Members** <span>Invite family or colleagues to share</span>](10_구성원_추가.md)
+- [**5. Using the Remote Control** <span>Registration (pairing) and channel control</span>](04_리모컨_사용하기.md)
+- [**6. Changing the Wi-Fi Router** <span>Reconnect to a new Wi-Fi</span>](08_공유기_변경.md)
+- [**7. Device Update** <span>Install new features and stability fixes</span>](09_기기_업데이트.md)
 - [**Home Assistant** <span>Local control and automations alongside the app (Hybrid)</span>](../ha/index.md)
 - [**Troubleshooting FAQ** <span>When it won't move · Frequently asked questions</span>](06_문제해결_FAQ.md)
 

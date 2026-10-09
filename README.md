@@ -26,7 +26,7 @@ INO_Manual/
 
 | 항목 | 값 |
 |---|---|
-| **사이트 주소** | **https://easyroll.github.io/** |
+| **사이트 주소** | **https://manual.easyroll.kr/** (옛 주소 https://easyroll.github.io/ 는 자동 이동) |
 | GitHub 저장소 | https://github.com/easyroll/easyroll.github.io (공개) |
 | GitHub 계정 | `easyroll` (회사 계정) ※`inoshade`도 회사 보유 |
 | 배포 방식 | main에 push → Actions가 MkDocs 빌드 → `gh-pages` 브랜치 → Pages 자동 반영 (1~2분) |
@@ -36,7 +36,7 @@ INO_Manual/
 ```
 ① 이 폴더(INO_Manual)의 docs\ 안 md 파일 수정
 ② git add -A → git commit → git push
-③ 1~2분 후 https://easyroll.github.io/ 자동 반영
+③ 1~2분 후 https://manual.easyroll.kr/ 자동 반영 (배포는 --strict: 깨진 링크·이미지가 있으면 배포 실패)
 ```
 
 ## 진행 상태
